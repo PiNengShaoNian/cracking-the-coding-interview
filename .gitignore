@@ -10,7 +10,7 @@
 
 # build
 /dist
-.exe
+*.exe
 
 # misc
 .DS_Store
