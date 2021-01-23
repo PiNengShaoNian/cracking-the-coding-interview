@@ -36,11 +36,11 @@ export const minSortingSequence1 = (nums: number[]): [number, number] => {
     else break
   }
 
-  if (min >= max) return [-1, -1]
+  if (nums[min] <= nums[max]) return [-1, -1]
 
   let minValue = Infinity
   let maxValue = -Infinity
-  for (let i = min + 1; i < max; ++i) {
+  for (let i = min; i <= max; ++i) {
     if (nums[i] > maxValue) maxValue = nums[i]
     if (nums[i] < minValue) minValue = nums[i]
   }
