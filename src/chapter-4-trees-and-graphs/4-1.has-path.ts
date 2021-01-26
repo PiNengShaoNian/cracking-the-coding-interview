@@ -1,4 +1,4 @@
-import Graph from '../util/graph'
+import Graph from '../util/Graph'
 
 export const hasPath = (
   graph: Graph,

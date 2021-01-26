@@ -1,4 +1,4 @@
-import { Queue } from '../../util/queue'
+import { Queue } from '../../util/Queue'
 import { Comparable } from './Comparable'
 import { hash } from './hash'
 import { SequentialSearchSymbolTable } from './SequentialSearchSymbolTable'

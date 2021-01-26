@@ -1,4 +1,4 @@
-import Graph from '../../util/graph'
+import Graph from '../../util/Graph'
 import { hasPath } from '../4-1.has-path'
 
 test('能正确的判断是否有路径', () => {

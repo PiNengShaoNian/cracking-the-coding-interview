@@ -1,4 +1,4 @@
-import { Queue } from '../../util/queue'
+import { Queue } from '../../util/Queue'
 import { Song } from './Song'
 
 export class Playlist {

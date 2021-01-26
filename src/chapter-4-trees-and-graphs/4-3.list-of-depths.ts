@@ -1,4 +1,4 @@
-import { Queue } from '../util/queue'
+import { Queue } from '../util/Queue'
 import { TreeNode } from './4-2.minimal-tree'
 
 type NodeWithDepth = {

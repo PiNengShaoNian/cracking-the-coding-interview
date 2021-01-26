@@ -1,4 +1,4 @@
-import { Queue } from '../util/queue'
+import { Queue } from '../util/Queue'
 
 type AnimalType = 'DOG' | 'CAT'
 type QueueItem = {

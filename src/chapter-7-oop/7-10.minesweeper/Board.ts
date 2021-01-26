@@ -1,4 +1,4 @@
-import { Queue } from '../../util/queue'
+import { Queue } from '../../util/Queue'
 import { uniform } from '../../util/uniform'
 import { Cell } from './Cell'
 import { GameState } from './Game'

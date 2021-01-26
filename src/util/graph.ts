@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs'
-import Bag from './bag'
+import Bag from './Bag'
 
 export default class Graph {
   private _vertices: number

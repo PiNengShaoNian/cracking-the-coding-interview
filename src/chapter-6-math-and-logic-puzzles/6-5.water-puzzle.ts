@@ -1,4 +1,4 @@
-import { Queue } from '../util/queue'
+import { Queue } from '../util/Queue'
 
 export const waterPuzzle = (n: number): number[] => {
   const queue = new Queue<number>()
