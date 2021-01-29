@@ -87,8 +87,8 @@ class MaxHeap<E extends number | string | Comparable<E>> {
     return max
   }
 
-  max() {
-    return this.data[1]
+  max(): E | null {
+    return this.data[1] ?? null
   }
 }
 
