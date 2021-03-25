@@ -6,7 +6,7 @@ const getRightParenIndex = (l: number, s: string): number => {
       stack.push(s[i])
     } else {
       stack.pop()
-      
+
       if (!stack.length) {
         result = i
         break
@@ -41,4 +41,26 @@ export const getParensPermutation = (n: number): string[] => {
   }
 
   return result
+}
+
+export const getParensPermutation1 = (count: number): string[] => {
+  const ans: string[] = []
+  const str: string[] = new Array(count * 2)
+
+  const core = (leftRem: number, rightRem: number, index: number) => {
+    if (leftRem < 0 || rightRem < leftRem) return
+
+    if (leftRem === 0 && rightRem === 0) {
+      ans.push(str.join(''))
+      return
+    }
+
+    str[index] = '('
+    core(leftRem - 1, rightRem, index + 1)
+    str[index] = ')'
+    core(leftRem, rightRem - 1, index + 1)
+  }
+
+  core(count, count, 0)
+  return ans
 }
